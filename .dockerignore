@@ -21,3 +21,6 @@ vite.config.ts
 server.ts
 src/
 index.html
+
+# Large media files (exclude from docker context)
+Demo Video.mp4
