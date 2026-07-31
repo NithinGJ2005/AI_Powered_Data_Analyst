@@ -28,6 +28,13 @@ Upload any CSV. Ask anything. Get insights, SQL, charts, forecasts, anomaly repo
 
 ---
 
+## 🚀 Live Demo
+
+Experience the platform live in your browser:  
+👉 **[https://ai-powered-data-analyst-v1.streamlit.app/](https://ai-powered-data-analyst-v1.streamlit.app/)**
+
+---
+
 ## 🎥 Demo Video
 
 > **Full feature walkthrough** — all 15 capabilities demonstrated end-to-end (~5 minutes).
