@@ -32,7 +32,9 @@ Upload any CSV. Ask anything. Get insights, SQL, charts, forecasts, anomaly repo
 
 > **Full feature walkthrough** — all 15 capabilities demonstrated end-to-end (~5 minutes).
 
-[![Enterprise AI Data Analyst - Click to Play Demo Video](Screenshots/Screenshot%202026-07-31%20105621.png)](https://github.com/NithinGJ2005/AI_Powered_Data_Analyst/raw/main/Demo%20Video.mp4)
+<a href="https://github.com/NithinGJ2005/AI_Powered_Data_Analyst/raw/main/Demo%20Video.mp4">
+  <img src="Screenshots/Screenshot 2026-07-31 105621.png" width="100%" alt="Enterprise AI Data Analyst - Click to Play Demo Video" />
+</a>
 
 > 🎥 **[CLICK HERE to stream the walkthrough video directly in your browser](https://github.com/NithinGJ2005/AI_Powered_Data_Analyst/raw/main/Demo%20Video.mp4)** *(Streams directly, no download required)*
 
