@@ -32,9 +32,9 @@ Upload any CSV. Ask anything. Get insights, SQL, charts, forecasts, anomaly repo
 
 > **Full feature walkthrough** — all 15 capabilities demonstrated end-to-end (~5 minutes).
 
-[![Enterprise AI Data Analyst - Click to Play Demo Video](Screenshots/Screenshot%202026-07-31%20105621.png)](https://github.com/NithinGJ2005/AI_Powered_Data_Analyst/blob/main/Demo%20Video.mp4)
+[![Enterprise AI Data Analyst - Click to Play Demo Video](Screenshots/Screenshot%202026-07-31%20105621.png)](https://github.com/NithinGJ2005/AI_Powered_Data_Analyst/raw/main/Demo%20Video.mp4)
 
-> 🎥 **[CLICK HERE to play the interactive walkthrough video inline on GitHub](https://github.com/NithinGJ2005/AI_Powered_Data_Analyst/blob/main/Demo%20Video.mp4)** *(Opens GitHub's native video player)*
+> 🎥 **[CLICK HERE to stream the walkthrough video directly in your browser](https://github.com/NithinGJ2005/AI_Powered_Data_Analyst/raw/main/Demo%20Video.mp4)** *(Streams directly, no download required)*
 
 **Features demonstrated:**
 CSV Upload → AI Chat → Dashboard → SQL Generation → Multi-file Analysis → Forecasting → Anomaly Detection → Data Quality → Recommendations → PDF Report → Monitoring → Evaluation
