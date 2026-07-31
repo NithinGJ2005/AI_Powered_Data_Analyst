@@ -32,9 +32,9 @@ Upload any CSV. Ask anything. Get insights, SQL, charts, forecasts, anomaly repo
 
 > **Full feature walkthrough** — all 15 capabilities demonstrated end-to-end (~5 minutes).
 
-https://github.com/NithinGJ2005/AI_Powered_Data_Analyst/blob/main/Demo%20Video.mp4
+<video src="Demo Video.mp4" width="100%" controls></video>
 
-> *If the above link does not play inline, download and view locally: [`Demo Video.mp4`](Demo%20Video.mp4)*
+> *If your browser does not support the video player, click to view: [Demo Video.mp4](Demo%20Video.mp4)*
 
 **Features demonstrated:**
 CSV Upload → AI Chat → Dashboard → SQL Generation → Multi-file Analysis → Forecasting → Anomaly Detection → Data Quality → Recommendations → PDF Report → Monitoring → Evaluation
