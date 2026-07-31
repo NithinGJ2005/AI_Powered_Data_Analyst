@@ -1,0 +1,101 @@
+OrderID,OrderDate,Customer,Region,Product,Category,Quantity,Sales,Profit
+1001,2026-06-13,David,East,Desk,Furniture,4,596.87,161.72
+1002,2026-06-23,Ryan,East,Storage Box,Office Supplies,7,127.87,9.99
+1003,2026-03-01,Quinn,East,Pen,Office Supplies,4,1804.25,469.82
+1004,2026-04-18,Henry,South,Storage Box,Office Supplies,5,2033.1,105.62
+1005,2026-02-10,Noah,North,Desk,Furniture,3,577.52,161.16
+1006,2026-01-27,Charlie,South,Phone,Technology,6,2126.36,491.44
+1007,2026-01-12,Olivia,East,Binder,Office Supplies,2,1402.5,419.1
+1008,2026-06-08,Leo,West,Phone,Technology,1,1670.1,470.84
+1009,2026-01-21,Henry,East,Binder,Office Supplies,5,1160.86,348.53
+1010,2026-02-11,Leo,North,Chair,Furniture,5,1769.46,451.33
+1011,2026-01-19,Tom,West,Pen,Office Supplies,4,450.34,73.78
+1012,2026-06-13,Ryan,West,Table,Furniture,1,611.17,36.44
+1013,2026-03-22,Mia,North,Phone,Technology,4,2287.18,503.53
+1014,2026-03-22,Grace,South,Binder,Office Supplies,8,400.04,36.76
+1015,2026-05-24,Ryan,North,Storage Box,Office Supplies,7,2249.67,382.04
+1016,2026-02-26,Eva,South,Phone,Technology,1,2159.7,207.01
+1017,2026-02-10,Noah,East,Binder,Office Supplies,7,1509.93,287.51
+1018,2026-03-06,Ryan,East,Phone,Technology,5,1933.07,293.93
+1019,2026-03-17,Noah,West,Paper,Office Supplies,1,2386.85,746.5
+1020,2026-03-09,Quinn,West,Pen,Office Supplies,2,2182.77,304.57
+1021,2026-06-13,Quinn,West,Printer,Technology,6,1918.15,406.29
+1022,2026-05-16,Alice,North,Paper,Office Supplies,1,324.08,51.49
+1023,2026-03-20,Henry,East,Chair,Furniture,2,259.85,50.88
+1024,2026-01-18,Ryan,West,Printer,Technology,8,2369.78,235.88
+1025,2026-05-16,Tom,South,Chair,Furniture,4,1796.72,304.9
+1026,2026-06-21,Leo,South,Pen,Office Supplies,8,346.46,40.68
+1027,2026-03-28,Alice,West,Storage Box,Office Supplies,4,67.62,17.74
+1028,2026-01-16,Henry,East,Laptop,Technology,6,223.6,27.15
+1029,2026-06-21,Paul,West,Pen,Office Supplies,3,1822.21,573.48
+1030,2026-05-28,Paul,West,Paper,Office Supplies,7,516.5,40.84
+1031,2026-04-21,Leo,South,Binder,Office Supplies,8,2166.4,143.53
+1032,2026-06-17,David,East,Binder,Office Supplies,6,2011.45,166.51
+1033,2026-02-19,Grace,South,Printer,Technology,7,499.55,94.31
+1034,2026-01-20,Olivia,East,Laptop,Technology,1,2424.04,794.87
+1035,2026-03-02,Frank,South,Paper,Office Supplies,8,573.68,97.7
+1036,2026-01-16,Frank,South,Laptop,Technology,7,699.75,199.58
+1037,2026-04-27,Jack,South,Pen,Office Supplies,8,429.25,59.67
+1038,2026-01-15,Sophia,East,Table,Furniture,1,172.85,33.37
+1039,2026-05-16,Frank,East,Pen,Office Supplies,2,2135.79,150.69
+1040,2026-01-18,Henry,South,Phone,Technology,4,1468.35,90.92
+1041,2026-01-21,Noah,North,Desk,Furniture,4,1690.83,243.91
+1042,2026-03-09,Mia,West,Desk,Furniture,8,824.63,227.23
+1043,2026-01-19,Alice,South,Storage Box,Office Supplies,2,229.49,26.15
+1044,2026-03-09,Eva,North,Phone,Technology,4,955.34,92.98
+1045,2026-05-20,Jack,East,Pen,Office Supplies,5,2332.8,189.13
+1046,2026-02-04,Ivy,East,Phone,Technology,3,717.25,166.01
+1047,2026-03-29,Grace,North,Pen,Office Supplies,8,665.25,214.51
+1048,2026-01-14,Charlie,South,Desk,Furniture,1,58.69,16.51
+1049,2026-06-13,Ivy,West,Paper,Office Supplies,7,1424.22,119.01
+1050,2026-06-26,Eva,East,Table,Furniture,3,1102.98,68.99
+1051,2026-04-04,Bob,North,Chair,Furniture,4,1683.99,262.88
+1052,2026-05-24,Noah,West,Chair,Furniture,3,2441.7,715.98
+1053,2026-04-16,Alice,West,Table,Furniture,7,2015.48,623.23
+1054,2026-03-05,Ivy,West,Phone,Technology,7,2186.81,672.61
+1055,2026-02-26,Grace,South,Table,Furniture,5,2060.31,641.57
+1056,2026-02-27,Alice,West,Binder,Office Supplies,6,732.58,51.89
+1057,2026-03-13,Leo,South,Pen,Office Supplies,6,2351.13,198.91
+1058,2026-03-08,Frank,North,Laptop,Technology,2,1511.6,232.34
+1059,2026-03-22,Noah,East,Binder,Office Supplies,4,674.07,177.03
+1060,2026-01-01,Quinn,West,Table,Furniture,7,221.44,55.2
+1061,2026-03-26,Tom,North,Phone,Technology,5,1292.45,323.2
+1062,2026-03-25,Mia,North,Pen,Office Supplies,3,520.01,129.73
+1063,2026-04-08,Frank,North,Binder,Office Supplies,1,794.49,89.82
+1064,2026-05-29,Tom,North,Paper,Office Supplies,8,1133.29,129.32
+1065,2026-05-02,Frank,East,Desk,Furniture,6,278.8,93.57
+1066,2026-03-02,Jack,West,Chair,Furniture,3,109.84,13.56
+1067,2026-05-02,Tom,East,Paper,Office Supplies,7,2221.04,494.63
+1068,2026-06-28,Mia,South,Binder,Office Supplies,4,411.55,105.47
+1069,2026-01-28,Noah,West,Printer,Technology,8,173.04,21.59
+1070,2026-02-01,Olivia,West,Paper,Office Supplies,6,2377.6,754.72
+1071,2026-06-06,Quinn,South,Pen,Office Supplies,8,2248.16,613.96
+1072,2026-05-02,Olivia,North,Chair,Furniture,5,1926.24,397.56
+1073,2026-06-10,Henry,North,Paper,Office Supplies,2,1798.18,216.41
+1074,2026-03-27,Karen,East,Printer,Technology,3,616.59,159.19
+1075,2026-06-30,Grace,East,Binder,Office Supplies,7,860.66,163.33
+1076,2026-01-16,Grace,South,Binder,Office Supplies,1,2148.99,601.03
+1077,2026-04-08,Paul,East,Table,Furniture,5,1896.01,580.24
+1078,2026-04-18,Ryan,West,Paper,Office Supplies,4,718.69,140.64
+1079,2026-04-10,Karen,South,Printer,Technology,8,2302.88,792.69
+1080,2026-05-17,Alice,South,Storage Box,Office Supplies,1,255.67,45.66
+1081,2026-04-29,Frank,East,Desk,Furniture,7,852.01,158.82
+1082,2026-03-28,Mia,North,Binder,Office Supplies,5,2095.53,400.44
+1083,2026-05-19,Bob,North,Chair,Furniture,2,1964.02,482.22
+1084,2026-01-08,Henry,West,Laptop,Technology,3,634.44,121.86
+1085,2026-01-30,Sophia,West,Paper,Office Supplies,5,1928.9,193.54
+1086,2026-06-05,David,West,Desk,Furniture,2,1467.78,482.41
+1087,2026-05-28,Mia,South,Chair,Furniture,2,1500.64,448.95
+1088,2026-03-04,David,North,Storage Box,Office Supplies,2,2000.76,439.73
+1089,2026-01-11,Leo,South,Table,Furniture,2,1289.6,196.5
+1090,2026-04-18,Paul,East,Binder,Office Supplies,6,1607.18,479.92
+1091,2026-02-09,Noah,West,Pen,Office Supplies,5,1558.99,508.05
+1092,2026-05-04,Olivia,South,Storage Box,Office Supplies,5,839.65,103.82
+1093,2026-01-23,Ivy,South,Chair,Furniture,8,1446.13,362.19
+1094,2026-03-28,Alice,South,Table,Furniture,3,1244.5,194.7
+1095,2026-03-08,Karen,North,Storage Box,Office Supplies,5,1411.69,289.38
+1096,2026-02-18,Charlie,West,Binder,Office Supplies,8,1410.18,172.18
+1097,2026-05-02,Paul,South,Laptop,Technology,2,770.88,132.07
+1098,2026-03-04,Jack,North,Paper,Office Supplies,6,1092.48,299.1
+1099,2026-03-26,Leo,South,Desk,Furniture,5,665.94,57.4
+1100,2026-02-19,Karen,East,Pen,Office Supplies,3,519.28,141.03

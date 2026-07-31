@@ -1,0 +1,736 @@
+:root {
+    --bg-color: #0F172A;
+    --sidebar-bg: #0B0F19;
+    --card-bg: #1E293B;
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --accent-blue: #3B82F6;
+    --accent-indigo: #6366F1;
+    --success-green: #10B981;
+    --border-radius: 12px;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Card-like containers with smooth hover states */
+.stApp .stMarkdownContainer, 
+.stApp [data-testid="stMetric"], 
+.stApp [data-testid="stDataFrame"],
+.stApp [data-testid="stExpander"],
+.stApp [data-testid="stFileUploader"] {
+    background-color: var(--card-bg) !important;
+    border-radius: var(--border-radius) !important;
+    padding: 1.25rem !important;
+    box-shadow: var(--shadow-md) !important;
+    border: 1px solid #334155 !important;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stApp [data-testid="stMetric"]:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-blue) !important;
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.stApp [data-testid="stExpander"] {
+    padding: 0.75rem 1rem !important;
+}
+
+/* Sidebar Styling */
+section[data-testid="stSidebar"] {
+    background-color: var(--sidebar-bg);
+    border-right: 1px solid #1E293B;
+}
+
+section[data-testid="stSidebar"] .stMarkdownContainer {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+/* Tab container alignment and spacing */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    background-color: #0B0F19;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid #1E293B;
+    margin-bottom: 20px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 6px !important;
+    padding: 8px 16px !important;
+    color: var(--text-secondary) !important;
+    font-weight: 500 !important;
+    border: none !important;
+    background-color: transparent !important;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+    background-color: var(--accent-blue) !important;
+    color: white !important;
+}
+
+/* Premium Buttons with subtle scale hover */
+.stButton > button, 
+.stDownloadButton > button {
+    background-color: var(--accent-blue) !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 0.6rem 1.2rem !important;
+    font-weight: 600 !important;
+    width: 100%;
+    transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+.stButton > button:hover, 
+.stDownloadButton > button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.1);
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.stButton > button:active, 
+.stDownloadButton > button:active {
+    transform: translateY(1px);
+}
+
+/* Specific styling for clear cache button */
+div[data-element-id="stSidebar"] .stButton > button {
+    background-color: #EF4444 !important;
+}
+
+/* Inputs & File Uploader */
+.stTextInput > div > div > input,
+.stSelectbox > div > div > div {
+    background-color: #0F172A !important;
+    border-radius: 8px !important;
+    color: var(--text-primary) !important;
+    border: 1px solid #334155 !important;
+    padding: 2px 4px;
+}
+
+.stFileUploader {
+    border: 2px dashed var(--accent-blue) !important;
+    border-radius: var(--border-radius) !important;
+    background-color: #0B0F19 !important;
+}
+
+/* Tables styling */
+table {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #1E293B !important;
+    color: var(--text-primary) !important;
+    padding: 0.75rem !important;
+    border-bottom: 2px solid #334155 !important;
+}
+
+td {
+    color: var(--text-secondary) !important;
+    padding: 0.75rem !important;
+    border-bottom: 1px solid #1E293B !important;
+}
+
+/* Chat Messages */
+[data-testid="stChatMessage"] {
+    background-color: var(--card-bg) !important;
+    border-radius: var(--border-radius) !important;
+    padding: 1.25rem !important;
+    margin-bottom: 1rem !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-testid="stChatMessageAssistant"] {
+    border-left: 4px solid var(--accent-indigo) !important;
+}
+
+[data-testid="stChatInput"] textarea {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+    border-radius: 8px !important;
+    border: 1px solid #334155 !important;
+}
+
+/* Custom Scrollbar for better UI coherence */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+/* Premium SaaS Homepage CSS */
+.hero-container {
+    position: relative;
+    padding: 5rem 3rem !important;
+    text-align: center;
+    border-radius: var(--border-radius) !important;
+    margin-bottom: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background: rgba(30, 41, 59, 0.45) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), var(--shadow-lg) !important;
+    overflow: hidden;
+}
+
+/* Subtle glowing background light */
+.hero-glow {
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 140%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, rgba(99, 102, 241, 0.05) 50%, rgba(0,0,0,0) 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-badge {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(59, 130, 246, 0.12);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 30px;
+    color: #60A5FA;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 1.75rem;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
+}
+
+.hero-title {
+    position: relative;
+    z-index: 1;
+    font-size: 3.5rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 1.5rem !important;
+    background: linear-gradient(135deg, #F8FAFC 0%, #94A3B8 100%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    letter-spacing: -0.03em;
+    line-height: 1.15 !important;
+}
+
+.hero-subtitle {
+    position: relative;
+    z-index: 1;
+    font-size: 1.35rem !important;
+    color: #94A3B8 !important;
+    max-width: 750px;
+    margin: 0 auto !important;
+    line-height: 1.65 !important;
+    font-weight: 400;
+}
+
+.hero-buttons {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.hero-btn.primary-btn {
+    background-color: var(--accent-blue) !important;
+    color: white !important;
+    box-shadow: 0 4px 14px rgba(59, 130, 246, 0.35) !important;
+}
+
+.hero-btn.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5) !important;
+    filter: brightness(1.1);
+}
+
+.hero-btn.secondary-btn {
+    background-color: rgba(255, 255, 255, 0.04) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.hero-btn.secondary-btn:hover {
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(51, 65, 85, 0) 0%, rgba(51, 65, 85, 0.8) 50%, rgba(51, 65, 85, 0) 100%);
+    margin: 3rem 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.feature-card {
+    background-color: rgba(30, 41, 59, 0.4) !important;
+    border-radius: var(--border-radius) !important;
+    padding: 2.25rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2) !important;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-blue) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3) !important;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    display: inline-block;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.feature-card h3 {
+    margin-top: 0 !important;
+    font-size: 1.35rem !important;
+    margin-bottom: 0.75rem !important;
+    color: var(--text-primary) !important;
+    font-weight: 700;
+}
+
+.feature-card p {
+    color: #94A3B8 !important;
+    font-size: 0.98rem !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+    font-weight: 400;
+}
+
+.cta-container {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(99, 102, 241, 0.08) 100%) !important;
+    border: 1px solid rgba(59, 130, 246, 0.2) !important;
+    border-radius: var(--border-radius) !important;
+    padding: 1.75rem 2.25rem !important;
+    gap: 1.75rem;
+    margin-top: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.cta-icon {
+    font-size: 2.75rem;
+    animation: pulse 2s infinite;
+}
+
+.cta-text h3 {
+    margin: 0 !important;
+    font-size: 1.4rem !important;
+    color: var(--text-primary) !important;
+    font-weight: 700;
+}
+
+.cta-text p {
+    margin: 0.35rem 0 0 0 !important;
+    color: var(--text-secondary) !important;
+    font-size: 1.05rem !important;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+/* Responsiveness adjustments */
+@media (max-width: 768px) {
+    .hero-container {
+        padding: 3.5rem 1.5rem !important;
+    }
+    .hero-title {
+        font-size: 2.5rem !important;
+    }
+    .hero-subtitle {
+        font-size: 1.15rem !important;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .cta-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem !important;
+        gap: 1rem;
+    }
+}
+
+/* Sidebar Premium Upload Panel & Success Card */
+.sidebar-upload-panel {
+    border: 2px dashed rgba(59, 130, 246, 0.35) !important;
+    border-radius: var(--border-radius) !important;
+    padding: 1.5rem 1.25rem !important;
+    background: rgba(30, 41, 59, 0.4) !important;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.sidebar-upload-panel:hover {
+    border-color: var(--accent-blue) !important;
+    background: rgba(30, 41, 59, 0.6) !important;
+}
+
+.upload-panel-icon {
+    font-size: 2.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.upload-panel-title {
+    color: white !important;
+    font-size: 1.2rem !important;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0 !important;
+}
+
+.upload-panel-subtitle {
+    color: #94A3B8 !important;
+    font-size: 0.82rem !important;
+    line-height: 1.4 !important;
+    margin: 0 0 1.25rem 0 !important;
+}
+
+.upload-checklist {
+    text-align: left;
+    margin-bottom: 1.25rem;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.checklist-item {
+    color: #CBD5E1 !important;
+    font-size: 0.8rem !important;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.checklist-item:last-child {
+    margin-bottom: 0;
+}
+
+.supported-formats {
+    color: #60A5FA !important;
+    font-size: 0.75rem !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.success-banner {
+    background: rgba(16, 185, 129, 0.08) !important;
+    border: 1px solid rgba(16, 185, 129, 0.25) !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.success-banner-title {
+    color: #10B981 !important;
+    font-size: 0.88rem !important;
+    font-weight: 700;
+}
+
+.dataset-stats-card {
+    background: rgba(30, 41, 59, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    margin-bottom: 0.75rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.dataset-stats-name {
+    color: white !important;
+    font-size: 0.82rem !important;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 6px;
+}
+
+.dataset-stats-grid {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.78rem;
+    color: #CBD5E1;
+}
+
+.dataset-stats-grid strong {
+    color: #94A3B8;
+}
+
+/* ChatGPT / Claude Chat interface styling */
+div[data-testid="stChatMessage"] {
+    border-radius: 16px !important;
+    padding: 1.5rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    background-color: rgba(30, 41, 59, 0.3) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    margin-bottom: 1.25rem !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+div[data-testid="stChatMessage"]:has(.user-chat-container) {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    padding: 0.5rem 0 !important;
+}
+
+/* Hide default user avatar since we right-align user bubbles */
+div[data-testid="stChatMessage"]:has(.user-chat-container) div[data-testid="stChatMessageAvatar"] {
+    display: none !important;
+}
+
+/* Force user message block to expand to full width to facilitate right alignment */
+div[data-testid="stChatMessage"]:has(.user-chat-container) div[data-testid="stChatMessageContent"] {
+    width: 100% !important;
+}
+
+.user-chat-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+.user-chat-bubble {
+    background: linear-gradient(135deg, var(--accent-blue) 0%, #1D4ED8 100%) !important;
+    color: white !important;
+    padding: 12px 18px !important;
+    border-radius: 18px 18px 2px 18px !important;
+    max-width: 75%;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25) !important;
+    font-size: 0.98rem !important;
+    line-height: 1.5 !important;
+    text-align: left !important;
+}
+
+.chat-timestamp-user {
+    text-align: right;
+    margin-top: 4px;
+    font-size: 0.75rem;
+    color: #64748B;
+    margin-right: 4px;
+}
+
+/* ═══════════════════════════════════════════════════
+   Hero Upload Zone  —  styles the native Streamlit
+   file uploader to look like a premium card
+   ═══════════════════════════════════════════════════ */
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatIcon {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-7px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ── Wrapper column: center and constrain width ── */
+[data-testid="column"]:nth-of-type(2):has([data-testid="stFileUploader"]) {
+    max-width: 700px !important;
+    margin: 0 auto !important;
+    animation: fadeInUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ── Outer stFileUploader box — neutralize Streamlit defaults ── */
+[data-testid="column"]:nth-of-type(2) [data-testid="stFileUploader"] {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+/* ── The actual dropzone <section> — this becomes our card ── */
+[data-testid="column"]:nth-of-type(2) [data-testid="stFileUploader"] section {
+    background: rgba(11, 15, 25, 0.82) !important;
+    border: 1.5px dashed rgba(59, 130, 246, 0.5) !important;
+    border-radius: 18px !important;
+    padding: 2.8rem 2.4rem 2.2rem !important;
+    text-align: center !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    box-shadow:
+        0 0 60px rgba(59, 130, 246, 0.07),
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255,255,255,0.04) !important;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease !important;
+    position: relative !important;
+    overflow: visible !important;
+    cursor: pointer !important;
+}
+
+[data-testid="column"]:nth-of-type(2) [data-testid="stFileUploader"] section:hover {
+    border-color: var(--accent-blue) !important;
+    box-shadow:
+        0 0 50px rgba(59, 130, 246, 0.14),
+        0 24px 48px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255,255,255,0.06) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* ── Inject floating folder icon via ::before pseudo-element ── */
+[data-testid="column"]:nth-of-type(2) [data-testid="stFileUploader"] section::before {
+    content: "📂";
+    display: block;
+    font-size: 2.6rem;
+    margin-bottom: 1.4rem;
+    width: 82px;
+    height: 82px;
+    line-height: 82px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(135deg, rgba(59,130,246,0.18) 0%, rgba(99,102,241,0.12) 100%);
+    border: 1.5px solid rgba(59, 130, 246, 0.28);
+    border-radius: 50%;
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15);
+    animation: floatIcon 3.4s ease-in-out infinite;
+}
+
+/* ── Hide native Streamlit upload icon + text ── */
+[data-testid="column"]:nth-of-type(2) [data-testid="stFileUploader"] section > div {
+    display: none !important;
+}
+
+/* ── Inject title + subtitle + pills via ::after ── */
+[data-testid="column"]:nth-of-type(2) [data-testid="stFileUploader"] section::after {
+    content: "Drag & Drop CSV Files Here\A \A Upload your dataset to initialize the analysis workspace";
+    white-space: pre;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #F8FAFC;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* ── Browse Files button ── */
+[data-testid="column"]:nth-of-type(2) [data-testid="stFileUploader"] section > span {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    flex-wrap: wrap !important;
+    padding-top: 0.5rem !important;
+}
+
+[data-testid="column"]:nth-of-type(2) [data-testid="stFileUploader"] section > span > button {
+    background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%) !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important;
+    font-weight: 600 !important;
+    font-size: 0.97rem !important;
+    padding: 0.72rem 2.2rem !important;
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.38) !important;
+    transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease !important;
+    cursor: pointer !important;
+    width: auto !important;
+}
+
+[data-testid="column"]:nth-of-type(2) [data-testid="stFileUploader"] section > span > button:hover {
+    filter: brightness(1.1) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 22px rgba(59, 130, 246, 0.52) !important;
+}
+
+[data-testid="column"]:nth-of-type(2) [data-testid="stFileUploader"] section > span > button:active {
+    transform: translateY(1px) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    [data-testid="column"]:nth-of-type(2) [data-testid="stFileUploader"] section {
+        padding: 2rem 1.25rem 1.75rem !important;
+        border-radius: 14px !important;
+    }
+
+    [data-testid="column"]:nth-of-type(2) [data-testid="stFileUploader"] section::before {
+        font-size: 2rem;
+        width: 64px;
+        height: 64px;
+        line-height: 64px;
+    }
+
+    [data-testid="column"]:nth-of-type(2) [data-testid="stFileUploader"] section::after {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,6 @@
+CustomerID,CustomerName,Region,Segment
+1,Alice,East,Premium
+2,Bob,West,Standard
+3,Charlie,South,Premium
+4,David,North,Standard
+5,Eva,East,Premium

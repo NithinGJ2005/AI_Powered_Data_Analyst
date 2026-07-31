@@ -1,0 +1,6 @@
+TransactionID,Date,Merchant,Amount,Category,Status
+1,2026-02-01,Amazon,120.5,Shopping,Success
+2,2026-02-02,Fuel,55.0,Transport,Success
+3,2026-02-03,Restaurant,42.3,Food,Success
+4,2026-02-04,Unknown,5000.0,Transfer,Flagged
+5,2026-02-05,Salary,-2500.0,Income,Success

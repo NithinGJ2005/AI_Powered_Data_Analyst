@@ -1,0 +1,66 @@
+# Large media files (exceeds GitHub 100MB limit — host via Releases or Google Drive)
+Demo Video.mp4
+*.mp4
+*.mov
+*.avi
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual Environments
+venv/
+env/
+.venv/
+.venv_audit/
+ENV/
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/cache/
+
+# Logs (runtime generated — do not commit)
+logs/*.log
+logs/*.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Node / Vite (leftover frontend scaffolding — not used)
+node_modules/
+dist/
+bun.lock
+package-lock.json
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# MyPy
+.mypy_cache/
